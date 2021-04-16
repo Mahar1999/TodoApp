@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+  background-color: #f8f3e6;
+}
+
+// Header
+
+.header {
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+
+  margin: 1rem auto;
+
+  background-color: #e7cc8f;
+  color: #48120e;
+  width: 70%;
+  border-radius: 2rem;
+
+  &__primary {
+    h1 {
+      padding-top: 0.5rem;
+    }
+  }
+  &__dateTime {
+    padding: 0.5rem 0;
+  }
+}
+
+//item
+.item {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.itemInput {
+  background-color: #e7cc8f;
+  border-radius: 20px;
+
+  font-size: 1.2rem;
+  font-weight: 400;
+
+  height: 15vh; // ye dena padh raha hai
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__bar {
+    &__search {
+      outline: none;
+      border-radius: 10px;
+      border: 1px solid #efaa52;
+      padding: 0.25rem 0.5rem;
+      margin: 1.5rem 0 0.5rem 0;
+      color: #48120e;
+    }
+  }
+
+  &__btn {
+    a {
+      text-decoration: none;
+      background-color: #48120e;
+      color: #e7cc8f;
+      padding: 0.25rem 1rem;
+      border-radius: 10px;
+    }
+  }
+}
+
+.itemList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: #e7cc8f;
+  border-radius: 20px;
+  margin-top: 0.5rem;
+
+  h1 {
+    margin-top: 0.5rem;
+  }
+  a {
+    text-decoration: none;
+    color: #48120e;
+    font-size: 1.2rem;
+  }
+
+  ul {
+    margin: 0.5rem 0;
+    width: 100%;
+  }
+
+  li {
+    display: flex;
+    width: 100%;
+    padding: 1rem 5rem;
+    justify-content: space-between;
+    line-height: 2rem;
+  }
+
+  &__done {
+    border: none;
+    background-color: #48120e;
+    color: #e7cc8f !important;
+    padding: 0.25rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 0rem 0.5rem;
+    &:focus{
+      outline: none;
+    }
+  }
+  &__delete {
+    border: none;
+    background-color: #48120e;
+    color: #e7cc8f !important;
+    padding: 0.25rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 0rem 0.5rem;
+
+    &:focus{
+      outline: none;
+    }
+  }
+}
+
+.done{
+  text-decoration: line-through;
+}

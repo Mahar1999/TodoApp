@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="icon" href="/resources/img/siteLogo.png" type="image/icon type" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="header__primary">
+            <h1>my todo list</h1>
+        </div>
+        <div class="header__dateTime">
+            <p>Date time</p>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="itemInput">
+            <div class="itemInput__bar">
+                <label for="text" class="itemInput__bar__label">Add your Todo here :-</label>
+                <input type="text" name="text" placeholder="Enter Todo item Here..." class="itemInput__bar__search" />
+            </div>
+
+            <div class="itemInput__btn">
+                <a href="#" class="itemInput__btn__submit" ">submit</a>
+                <a href=" #" class="itemInput__btn__clear">Clear List</a>
+            </div>
+        </div>
+
+        <div class="itemList">
+            <h1>Here is the list for today</h1>
+            <ul id='list'>
+
+
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
