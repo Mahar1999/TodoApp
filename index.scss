@@ -39,6 +39,7 @@ body {
 .item {
   width: 85%;
   margin: 0 auto;
+  position: relative;
 }
 
 .itemInput {
@@ -138,4 +139,26 @@ body {
 
 .done{
   text-decoration: line-through;
+}
+
+.footer{
+  width: 95%;
+  margin:0 auto;
+  background-color: #48120e;
+  color: #e7cc8f;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 0.9rem;
+  word-spacing: 3px;
+
+  position: absolute;
+  bottom: 0;
+  transform: translateX(2.5%);
+
+  a{
+    color:#efaa52;
+  }
+  p{
+    padding: 1.5rem;
+  }
 }
