@@ -7,7 +7,6 @@ const dateTime = document.querySelector('.header__dateTime')
 
 const addObj = function () {
     let input = document.querySelector('.itemInput__bar__search')
-
     //insertAdjacentHtml
 
     let html = `
@@ -24,8 +23,10 @@ const addObj = function () {
 }
 
 ///////// -->>EVENT LISTENERS 
+//adding value
 submit.addEventListener('click', addObj)
 
+//delete value
 list.addEventListener('click', e=>{
 
     if(!e.target.classList.contains('itemList__delete'))return
@@ -33,7 +34,7 @@ list.addEventListener('click', e=>{
     const parent = e.target.closest('li')
     list.removeChild(parent)
 })
-
+//done 
 list.addEventListener('click',e=>{
 
     //why dont we have to give "." here for classes
@@ -43,6 +44,7 @@ list.addEventListener('click',e=>{
     parent.classList.add("done") 
 })
 
+//clearing the list
 clearList.addEventListener('click',()=>{
     itemList.removeChild(list)
 })
